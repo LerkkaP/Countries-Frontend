@@ -3,13 +3,12 @@ import { useEffect, useState } from "react"
 
 const Weather = ({country}) => {
   const [data, setData] = useState({})
-  const backendUrl = 'http://localhost:3001' 
 
   useEffect(() => {
     const fetchData = async () => {
       if (country.name) {
         try {
-          const response = await axios.get(`${backendUrl}/weather?city=${country.name}`)
+          const response = await axios.get(`/weather?city=${country.name}`)
           setData(response.data)
         } catch (error) {
           setData({})
@@ -18,7 +17,7 @@ const Weather = ({country}) => {
     }
 
     fetchData()
-  }, [country.name, backendUrl])
+  }, [country.name])
 
   return (
     <div>
