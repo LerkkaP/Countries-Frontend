@@ -2,9 +2,9 @@
 
 This repository contains the frontend codebase for the Countries React app that allows users to search for countries, retrieve information about them and view weather details. 
 
-You can access the live version of the app [here](https://countries-backend-wjef.onrender.com/).
-
 ![App](ezgif.com-video-to-gif.gif)
+
+You can access the live version of the app [here](https://countries-backend-wjef.onrender.com/).
 
 ## Features
 
